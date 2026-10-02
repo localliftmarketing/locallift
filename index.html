@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LocalLift — Marketing cho tiệm nail</title>
+<meta name="description" content="LocalLift giúp tiệm nail của bạn xuất hiện trên Google, thu hút khách mới và chăm sóc đánh giá — chủ tiệm chỉ lo làm đẹp, Ryan lo hết phần marketing.">
+<style>
+  :root{
+    --gold:#F5B301;
+    --dark:#141414;
+    --darker:#0d0d0d;
+    --light:#faf7f0;
+    --muted:#8a8a8a;
+    --card:#1e1e1e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--darker);color:#fff;line-height:1.6}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(13,13,13,.92);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2a}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+  .logo{font-weight:800;font-size:20px;letter-spacing:1px}
+  .logo span{color:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:#111;font-weight:700;padding:12px 28px;border-radius:999px;text-decoration:none;font-size:16px;border:none;cursor:pointer;transition:transform .15s}
+  .btn:hover{transform:scale(1.04)}
+  .btn-sm{padding:9px 20px;font-size:14px}
+  /* HERO */
+  .hero{text-align:center;padding:72px 20px 60px;background:radial-gradient(ellipse at 50% 0%,#2b2305 0%,var(--darker) 60%)}
+  .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;font-size:13px;letter-spacing:2px;padding:8px 18px;border-radius:999px;margin-bottom:22px}
+  .hero h1{font-size:clamp(30px,6vw,54px);line-height:1.2;font-weight:900;margin-bottom:18px}
+  .hero h1 .hl{color:var(--gold)}
+  .hero p{color:#d8d8d8;font-size:clamp(16px,2.5vw,19px);max-width:640px;margin:0 auto 30px}
+  .hero .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid #444}
+  /* SECTIONS */
+  section{padding:56px 0}
+  .sec-title{text-align:center;font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:12px}
+  .sec-sub{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 36px;font-size:17px}
+  .sec-title .hl{color:var(--gold)}
+  /* PAIN */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid #2c2c2c;border-radius:16px;padding:26px 22px}
+  .card .icon{font-size:32px;margin-bottom:12px}
+  .card h3{font-size:18px;margin-bottom:8px}
+  .card p{color:#c9c9c9;font-size:15px}
+  /* SERVICES */
+  #dichvu{background:#111}
+  .svc{border-left:4px solid var(--gold)}
+  .svc h3{color:var(--gold)}
+  /* PROMISE */
+  .promise{background:linear-gradient(135deg,#1d1602,#0d0d0d);border:1px solid #4a3a05;border-radius:20px;padding:40px 30px;text-align:center;max-width:800px;margin:0 auto}
+  .promise h2{font-size:clamp(22px,4vw,32px);margin-bottom:16px}
+  .promise h2 .hl{color:var(--gold)}
+  .promise ul{list-style:none;text-align:left;max-width:560px;margin:24px auto 0}
+  .promise li{padding:10px 0;font-size:17px;border-bottom:1px solid #2c2c2c}
+  .promise li:last-child{border:none}
+  .promise li::before{content:"✓ ";color:var(--gold);font-weight:800}
+  /* STEPS */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;counter-reset:step}
+  .step{background:var(--card);border:1px solid #2c2c2c;border-radius:16px;padding:26px 20px;text-align:center;position:relative}
+  .step .num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--gold);color:#111;font-weight:900;font-size:20px;margin-bottom:14px}
+  .step h3{font-size:17px;margin-bottom:8px}
+  .step p{color:#c9c9c9;font-size:15px}
+  /* CTA */
+  #lienhe{text-align:center;background:radial-gradient(ellipse at 50% 100%,#2b2305 0%,var(--darker) 65%);padding:72px 20px}
+  #lienhe h2{font-size:clamp(26px,5vw,42px);font-weight:900;margin-bottom:16px}
+  #lienhe h2 .hl{color:var(--gold)}
+  #lienhe p{color:#d8d8d8;max-width:560px;margin:0 auto 30px;font-size:17px}
+  .btn-big{font-size:19px;padding:16px 44px}
+  footer{border-top:1px solid #2a2a2a;padding:26px 0;text-align:center;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">LOCAL<span>LIFT</span></div>
+    <a class="btn btn-sm" href="https://m.me/1534425598" target="_blank" rel="noopener">Nhắn tin ngay</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">MARKETING CHO TIỆM NAIL</div>
+    <h1>ĐỪNG ĐỂ TIỆM BẠN<br><span class="hl">ĐỨNG NGOÀI CUỘC</span></h1>
+    <p>Khách hàng tìm tiệm nail trên Google mỗi ngày. LocalLift giúp tiệm của bạn xuất hiện đúng lúc, đúng chỗ — để khách chọn bạn, không phải tiệm bên cạnh.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://m.me/1534425598" target="_blank" rel="noopener">💬 Nhắn tin cho Ryan</a>
+      <a class="btn btn-ghost" href="#dichvu">Xem dịch vụ</a>
+    </div>
+  </div>
+</header>
+
+<section id="vande">
+  <div class="wrap">
+    <h2 class="sec-title">Tiệm bạn có đang gặp <span class="hl">vấn đề này?</span></h2>
+    <p class="sec-sub">Hầu hết chủ tiệm nail giỏi làm đẹp — nhưng marketing thì không phải nghề của họ.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🔍</div><h3>Khách không tìm thấy tiệm</h3><p>Tiệm không xuất hiện trên Google khi khách quanh khu vực tìm "nail salon near me".</p></div>
+      <div class="card"><div class="icon">⭐</div><h3>Review xấu không ai xử lý</h3><p>Đánh giá 1–2 sao nằm đó làm mất khách mới, không ai trả lời hay cảm ơn khách.</p></div>
+      <div class="card"><div class="icon">💸</div><h3>Chạy quảng cáo đốt tiền</h3><p>Tự chạy ads không đúng đối tượng, tiền mất mà ghế vẫn trống.</p></div>
+      <div class="card"><div class="icon">⏰</div><h3>Không có thời gian</h3><p>Cả ngày đứng làm khách, tối về mệt — lấy đâu ra sức làm marketing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="dichvu">
+  <div class="wrap">
+    <h2 class="sec-title">Ryan làm <span class="hl">gì cho tiệm bạn?</span></h2>
+    <p class="sec-sub">Chủ tiệm chỉ lo làm đẹp cho khách — phần marketing để Ryan lo.</p>
+    <div class="grid">
+      <div class="card svc"><div class="icon">📍</div><h3>Quản lý Google Business</h3><p>Hồ sơ tiệm luôn mới: bài đăng chuẩn SEO mỗi tuần, hình ảnh đẹp, thông tin chính xác — để Google đẩy tiệm bạn lên top khu vực.</p></div>
+      <div class="card svc"><div class="icon">🎯</div><h3>Quảng cáo đúng khu vực</h3><p>Chạy quảng cáo nhắm đúng khách quanh tiệm, ngân sách kiểm soát chặt chẽ — từng đồng đều phải ra khách.</p></div>
+      <div class="card svc"><div class="icon">💬</div><h3>Chăm sóc đánh giá</h3><p>Trả lời từng review, cảm ơn khách hàng, hướng dẫn xin review đúng cách — uy tín tiệm tăng lên từng ngày.</p></div>
+      <div class="card svc"><div class="icon">📣</div><h3>Nội dung mạng xã hội</h3><p>Bài đăng Facebook/Instagram theo lịch, đúng giọng tiệm nail — tiệm luôn xuất hiện trước mắt khách.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="camket">
+  <div class="wrap">
+    <div class="promise">
+      <h2>Cam kết của <span class="hl">Ryan</span></h2>
+      <p style="color:#d8d8d8">Người ta nhận làm đại trà — Ryan nhận làm <strong style="color:var(--gold)">GIỚI HẠN</strong>.</p>
+      <ul>
+        <li><strong>Không review giả.</strong> Mọi đánh giá đều từ khách thật, việc thật.</li>
+        <li><strong>Không làm ẩu số lượng.</strong> Chỉ nhận số tiệm vừa sức để làm cho tới, báo cáo rõ ràng.</li>
+        <li><strong>Minh bạch ngân sách.</strong> Tiền quảng cáo của bạn — bạn biết từng đồng đi đâu.</li>
+        <li><strong>Hiểu nghề nail.</strong> Ryan là chủ tiệm nail, không phải agency ngoài ngành nói suông.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="quytrinh">
+  <div class="wrap">
+    <h2 class="sec-title">Bắt đầu <span class="hl">đơn giản</span></h2>
+    <p class="sec-sub">4 bước — không hợp đồng rườm rà, không cam kết dài hạn.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Nhắn tin</h3><p>Bạn nhắn tin cho Ryan, kể về tiệm của bạn.</p></div>
+      <div class="step"><div class="num">2</div><h3>Tư vấn</h3><p>Ryan xem hồ sơ hiện tại của tiệm và tư vấn hướng làm.</p></div>
+      <div class="step"><div class="num">3</div><h3>Triển khai</h3><p>Bắt tay vào làm: hồ sơ Google, nội dung, quảng cáo.</p></div>
+      <div class="step"><div class="num">4</div><h3>Báo cáo</h3><p>Báo cáo kết quả rõ ràng — khách tăng hay không, bạn tự thấy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lienhe">
+  <div class="wrap">
+    <h2>Tiệm đông khách bắt đầu từ<br><span class="hl">một tin nhắn</span></h2>
+    <p>Nhắn tin trực tiếp cho Ryan để biết thêm chi tiết. Không mất phí tư vấn — hợp thì làm, không hợp thì thôi.</p>
+    <a class="btn btn-big" href="https://m.me/1534425598" target="_blank" rel="noopener">💬 Nhắn tin cho Ryan ngay</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 LocalLift — Marketing cho tiệm nail. Làm bởi Ryan Phan.</div>
+</footer>
+
+</body>
+</html>
